@@ -1,0 +1,120 @@
+// Bring in Bootstrap
+@import '../../bower_components/bootstrap/less/bootstrap';
+
+// Add the Bootswatch theme
+@import '../../bower_components/bootswatch/lumen/variables';
+@import '../../bower_components/bootswatch/lumen/bootswatch';
+
+// Add custom icon font
+@import (inline) '../font/style.css';
+
+@brand-primary: rgb(117, 17, 67);
+
+body {
+  padding-bottom: @line-height-computed;
+
+  @media (max-width: @screen-xs-max) {
+    border-left: 30px solid @brand-primary;
+  }
+}
+
+#logo-pane {
+  background: @brand-primary;
+
+  // Fill viewport vertically
+  position: absolute;
+  top: 0;
+  bottom: 0;
+
+  .logo {
+    color: white;
+    text-align: right;
+
+    // Center vertically
+    position: absolute;
+    top: 35px;
+
+    // Set size and position horizontally
+    max-width: 65%;
+    height: auto;
+    right: 10%;
+
+    .lead {
+      @media (max-width: @screen-sm-max) {
+        font-size: 17px;
+      }
+      @media (max-width: @screen-md-max) {
+        font-size: 19px;
+      }
+
+      margin-top: @line-height-computed;
+    }
+  }
+}
+
+#content-pane {
+  img.logo {
+    width: 80%;
+    max-width: 325px;
+    padding-top: 20px;
+    padding-bottom: 15px;
+  }
+
+  @media (min-width: @screen-sm-min) {
+    padding: 35px 20% 35px 30px;
+
+    @media (min-width: @screen-md-min) {
+      padding-right: 25%;
+    }
+
+    @media (min-width: @screen-lg-min) {
+      padding-right: 30%;
+    }
+
+    position: fixed;
+    max-height: 100%;
+    overflow-y: scroll;
+  }
+
+  .block {
+    margin-bottom: @line-height-computed * 1.5;
+  }
+
+  h3 {
+    margin-top: 0;
+  }
+}
+
+.btn-group {
+  margin-top: @line-height-computed;
+  .btn {
+    text-align: left;
+    width: 65%;
+    white-space: normal;
+    line-height: 12px;
+    [class^="icon-"], [class*=" icon-"] {
+      font-size: 32px;
+      margin-right: 5px;
+    }
+    .btn-desc {
+      font-weight: 400;
+      font-size: 10px;
+      text-transform: none;
+    }
+  }
+}
+
+.media {
+  margin-bottom: 8px;
+  img.media-object {
+    width: 55px;
+    border-radius: 5px;
+  }
+  [class^="icon-"], [class*=" icon-"] {
+    margin-top: 4px;
+    margin-right: 3px;
+  }
+  a {
+    color: darken(desaturate(@brand-primary, 35%), 5%);
+  }
+}

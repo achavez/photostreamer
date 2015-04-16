@@ -1,0 +1,21 @@
+{
+  "name": "photostreamer",
+  "version": "0.0.0",
+  "authors": [
+    "Andrew Chavez <adchavez@gmail.com>"
+  ],
+  "description": "Website, central repository for Photostreamer project",
+  "main": "index.html",
+  "homepage": "https://code.achavez.io/photostreamer",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "devDependencies": {
+    "bootstrap": "~3.3.4",
+    "bootswatch": "~3.3.2"
+  }
+}

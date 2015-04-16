@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Photostreamer</title>
+    <meta name="description" content="Photostreamer is an open-source tool to stream photos live to the cloud using any EOS camera and a Raspberry Pi.">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <meta property="og:title" content="Photostreamer"/>
+    <meta property="og:description" content="Photostreamer is an open-source tool to stream photos live to the cloud using any EOS camera and a Raspberry Pi."/>
+    <meta property="og:image" content="http://code.achavez.io/photostreamer/assets/share.jpg"/>
+    <meta property="og:url" content="http://code.achavez.io/photostreamer"/>
+
+    <link rel="icon" type="image/png" href="favicon-32x32.png" sizes="32x32" />
+    <link rel="icon" type="image/png" href="favicon-16x16.png" sizes="16x16" />
+
+    <link href="dist/styles.css" rel="stylesheet" />
+  </head>
+  <body>
+    <div class="container-fluid">
+      <div class="row">
+        <div id="logo-pane" class="col-xs-12 col-sm-4 col-md-3 hidden-xs">
+          <div class="logo">
+            <img class="img-responsive" src="assets/panel.gif" />
+            <p class="lead">Photostreamer is an open-source tool to stream photos live to the cloud using any EOS camera and a Raspberry Pi.</p>
+          </div>
+        </div>
+        <div id="content-pane" class="col-xs-12 col-sm-push-4 col-sm-8 col-md-push-3 col-md-9">
+          <img class="logo img-responsive hidden-sm hidden-md hidden-lg" src="assets/logo.png" />
+
+          <p class="lead hidden-sm hidden-md hidden-lg">Photostreamer is an open-source tool to stream photos live to the cloud using any EOS camera and a Raspberry Pi.</p>
+
+          <hr class="hidden-sm hidden-md hidden-lg" />
+
+          <div class="block">
+            <h3>About Photostreamer</h3>
+            <p>Photostreamer uses the open-source <a href="http://gphoto.sourceforge.net/" target="_blank">gphoto2</a> library to connect a <a href="https://www.raspberrypi.org/" target="_blank">Raspberry Pi</a> microcomputer to any compatible camera using USB and send photos to the cloud using a Python application.</p>
+            <p>Photos are streamed to <a href="http://aws.amazon.com/s3/" target="_blank">Amazon's Simple Storage Service</a> and available for browsing in a browser-based viewer application.</p>
+            <p>Only thumbnails of each photo are sent to preserve bandwidth, but users can request a full-resolution version of any photo using the viewer application and have it delivered by the Raspberry Pi to Amazon S3.</p>
+            <p>All of the code is open source and the hardware to build Photostreamer costs less than $75 per camera. The server component can be deployed for free on Heroku's cloud and photos can be stored inexpensively on Amazon's Simple Storage Service.</p>
+            <p><em>Development has been funded by the <a href="http://www.knightfoundation.org/grants/201449647/" target="_blank">Knight Prototype Fund</a> and Texas Christian University's <a href="http://journalism.tcu.edu/" target="_blank">School of Journalism</a>.</em></p>
+          </div>
+
+          <div class="block">
+            <h3>Get the code</h3>
+            <p>This project is still in heavy development, but you're welcome to check out the code and take it for a spin, offer feedback and file bugs.</p>
+            <p>Alpha code, with limited documentation, is available on Github. The repository and server are in separate repos, both of which contain up-to-date deployment instructions.</p>
+            <p>We plan to release a fully-functioning beta version by the end of summer 2015.</p>
+            <div class="btn-group btn-group-justified" role="group">
+              <a class="btn btn-default btn-block" href="https://github.com/achavez/photostreamer-pi"><span class="icon-circuit-board pull-left"></span>Sender<br /><span class="btn-desc">Optimized for the Raspberry Pi 2</span></a>
+              <a class="btn btn-default btn-block" href="https://github.com/achavez/photostreamer-server"><span class="icon-server pull-left"></span>Receiver<br /><span class="btn-desc">Deployable on Heroku</span></a>
+            </div>
+          </div>
+
+          <div class="block">
+            <div class="row">
+              <div class="col-xs-12">
+                <h3>Developers</h3>
+              </div>
+              <div class="col-xs-12 col-md-6">
+                <div class="media">
+                  <div class="media-left">
+                    <img class="media-object" src="assets/andrew.jpg" />
+                  </div>
+                  <div class="media-body">
+                    <h4 class="media-heading">Andrew Chavez</h4>
+                    <ul class="list-inline">
+                      <li>
+                        <a href="http://achavez.io" target="_blank">
+                          <span class="icon-link pull-left"></span>achavez.io
+                        </a>
+                      </li>
+                      <li>
+                        <a href="https://twitter.com/adchavez" target="_blank">
+                          <span class="icon-twitter pull-left"></span>adchavez
+                        </a>
+                      </li>
+                      <li>
+                        <a href="https://github.com/achavez" target="_blank">
+                          <span class="icon-github pull-left"></span>achavez
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="col-xs-12 col-md-6">
+                <div class="media">
+                  <div class="media-left">
+                    <img class="media-object" src="assets/kent.jpg" />
+                  </div>
+                  <div class="media-body">
+                    <h4 class="media-heading">Kent Chapline</h4>
+                    <ul class="list-inline">
+                      <li>
+                        <a href="http://kentchapline.com" target="_blank">
+                          <span class="icon-link pull-left"></span>kentchapline.com
+                        </a>
+                      </li>
+                      <li>
+                        <a href="https://twitter.com/kchapline" target="_blank">
+                          <span class="icon-twitter pull-left"></span>kchapline</li>
+                        </a>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
